@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Login - Donorku</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="logo">
+            <img src="assets/images/logo.jpg" alt="Donorku Logo" />
+        </div>
+
+        <div class="login-box">
+
+            <h2>Selamat Datang di Donorku</h2>
+
+            <p class="subtitle">Sistem Informasi Donor Darah</p>
+
+            <form method="post" action="../backend/auth/login.php">
+
+                <div class="input-group">
+                    <span class="input-icon">&#9993;</span>
+                    <input type="text" name="email"
+                           placeholder="Alamat Email"
+                           required="required" />
+                </div>
+
+                <div class="input-group">
+                    <span class="input-icon">&#128274;</span>
+                    <input type="password" name="password"
+                           placeholder="Password"
+                           required="required" />
+                </div>
+
+                <button type="submit" class="login-button">
+                    Login
+                </button>
+
+            </form>
+
+            <p class="register-link">
+                Belum punya akun?
+                <a href="register.xhtml">Daftar di sini</a>
+            </p>
+
+        </div>
+
+        <p class="helpdesk">
+            Mengalami Masalah?
+            <a href="mailto:support@donorku.com">Hubungi Kami</a>
+        </p>
+
+    </div>
+
+    <div class="footer">
+        Donorku - Sistem Informasi Donor Darah
+    </div>
+
+</body>
+
+</html>

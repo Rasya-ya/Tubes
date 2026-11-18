@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Register - Donorku</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <h1>Register Donorku</h1>
+    <h3>Silakan isi formulir berikut untuk mendaftar akun baru.</h3>
+
+    <form method="post" action="register.php">
+
+        <table cellpadding="4" border="1"
+               style="border-collapse: collapse; width:100%;">
+
+            <tr>
+                <td>
+                    <label for="nama"><strong>Nama Lengkap</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="nama" name="nama"
+                           size="30" required="required" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email"><strong>Alamat Email Aktif</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="email" name="email"
+                           size="30" required="required" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="password"><strong>Password</strong></label>
+                </td>
+                <td>
+                    <input type="password" id="password" name="password"
+                           size="30" required="required" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="no_hp"><strong>Nomor HP</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="no_hp" name="no_hp"
+                           size="30" required="required" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="tanggal_lahir"><strong>Tanggal Lahir</strong></label>
+                </td>
+                <td>
+                    <input type="date" id="tanggal_lahir"
+                           name="tanggal_lahir" required="required" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="golongan_darah"><strong>Golongan Darah</strong></label>
+                </td>
+                <td>
+                    <select id="golongan_darah" name="golongan_darah"
+                            required="required">
+                        <option value="">-- Pilih Golongan Darah --</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="rhesus"><strong>Rhesus</strong></label>
+                </td>
+                <td>
+                    <select id="rhesus" name="rhesus" required="required">
+                        <option value="">-- Pilih Rhesus --</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="berat_badan"><strong>Berat Badan (kg)</strong></label>
+                </td>
+                <td>
+                    <input type="number" id="berat_badan"
+                           name="berat_badan" step="0.1" min="0"
+                           required="required" />
+                </td>
+            </tr>
+
+        </table>
+        <button type="submit" class="login-button">Daftar</button>
+        <p class="register-link">Sudah punya akun?<a href="login.xhtml">Login di sini</a></p>
+    </form> 
+
+</body>
+
+</html>

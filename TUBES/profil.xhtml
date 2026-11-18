@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Profil - DonorKu</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <!-- Menu atas (diisi otomatis oleh js/common.js) -->
+  <header><b>DonorKu</b><span id="nav"></span></header>
+
+  <main>
+    <section>
+      <h1>Profil saya</h1>
+      <img id="fp" alt="Foto profil"/>
+      <p>Email: <span id="email_ro"></span></p>
+
+      <form id="form" action="#" enctype="multipart/form-data">
+        <label for="nama">Nama lengkap</label>
+        <input id="nama" name="nama" type="text" required="required"/>
+
+        <label for="no_hp">No. HP</label>
+        <input id="no_hp" name="no_hp" type="text"/>
+
+        <label for="tgl_lahir">Tanggal lahir</label>
+        <input id="tgl_lahir" name="tgl_lahir" type="date"/>
+
+        <label for="golongan_darah">Golongan darah</label>
+        <select id="golongan_darah" name="golongan_darah">
+          <option>A</option>
+          <option>B</option>
+          <option>AB</option>
+          <option selected="selected">O</option>
+        </select>
+
+        <label for="rhesus">Rhesus</label>
+        <select id="rhesus" name="rhesus">
+          <option value="+">Positif (+)</option>
+          <option value="-">Negatif (-)</option>
+        </select>
+
+        <label for="berat_badan">Berat badan (kg)</label>
+        <input id="berat_badan" name="berat_badan" type="number" min="1"/>
+
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat" rows="3" cols="30"></textarea>
+
+        <label for="foto">Foto profil (jpg/png, maks 2 MB)</label>
+        <input id="foto" name="foto" type="file" accept="image/png,image/jpeg"/>
+
+        <button type="submit">Simpan perubahan</button>
+      </form>
+
+      <p id="pesan"></p>
+    </section>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/profil.js"></script>
+</body>
+</html>
